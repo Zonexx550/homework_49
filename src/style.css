@@ -1,0 +1,146 @@
+/* Общая структура */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+header {
+  background: #111827;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.product-section {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cart-section {
+  flex: 1;
+  min-width: 300px;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+/* Карточки товаров */
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 220px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-2px);
+}
+
+.product-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.product-card h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.product-card p {
+  font-weight: bold;
+  margin: 0.25rem 0;
+}
+
+.product-card button {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  border: none;
+  background: #10b981;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background: #059669;
+}
+
+/* Корзина */
+.cart-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.cart-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 1rem;
+}
+
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.cart-item-info {
+  flex: 1;
+}
+
+.cart-item-info h4 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.cart-item-info p {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.cart-item-info input {
+  width: 50px;
+  padding: 0.2rem;
+  margin-right: 0.5rem;
+}
+
+.cart-item-info button {
+  padding: 0.2rem 0.5rem;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.cart-item-info button:hover {
+  background: #dc2626;
+}
+
+.cart-total {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: right;
+}
